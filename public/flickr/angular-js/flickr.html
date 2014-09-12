@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="flickrApp">
+    <head>
+    <title>Angular JS and Flickr API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-resource.js"></script>
+    <script src="flickr.js"></script>
+    <link rel="stylesheet" href="flickr.css">
+    </head>
+    <body>
+    <div ng-controller="flickrController" id="wrapper">
+        <div id="main">
+            <ul>
+                 <li class="title" title="Click any one of the tag names">Angular JS and Flickr API Demo:</li>
+                <li ng-repeat="tag in tags" ng-click="loadData(tag)">{{tag | uppercase}}</li>
+            </ul>
+            <hr>
+            <div ng-repeat="item in flickrData.items" class="flickr-item">
+                <h4>{{item.title | limitTo:25}}</h4>
+                <img ng-src="{{item.media.m}}" /><br/>
+                <span>{{item.published | date:'short'}}</span>
+            </div>
+            <hr>
+        </div>
+    </div>
+    </body>
+</html>

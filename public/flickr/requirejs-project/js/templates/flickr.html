@@ -1,0 +1,6 @@
+ <% _.forEach(data,  function(item){ %>
+        <div class="flickr-image">
+          <img src="<%= item.imageUrl%>">
+          <p><%= item.title.substring(0,20)%></p>
+        </div>
+ <% }) %>
