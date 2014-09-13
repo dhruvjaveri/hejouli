@@ -10,15 +10,15 @@
 
     <title>Flickr</title>
     <!-- Latest compiled and minified CSS -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
  </head>
  
  <style>
     body {background-color: #111; color: #fff;}
     .flickr-img img {
-        border:1px solid #;
+        border:1px solid #fff;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
@@ -36,12 +36,9 @@
           </div>
     </div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
      <script src="flickr-masonry.js"></script>
-    <script id="flickr-item" type="text/template">
+     <script id="flickr-item" type="text/template">
       <% _.each( items, function( item, id ) { %>
             <div class="flickr-img">
               <h4><%= item.title %></h4>

@@ -6,7 +6,7 @@ angular.module('flickrApp', ['ng', 'ngResource'])
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
         })
 */
-    .constant('flickerAPI', "http://api.flickr.com/services/feeds/photos_public.gne")
+    .constant('flickerAPI', "//api.flickr.com/services/feeds/photos_public.gne")
     //.constant('flickerAPI', "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?")
     //'http://api.flickr.com/services/feeds/photos_public.gne'
     .factory('flickrPhotos', function ($resource, flickerAPI) {

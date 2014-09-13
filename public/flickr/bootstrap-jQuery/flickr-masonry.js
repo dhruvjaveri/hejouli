@@ -1,4 +1,4 @@
-var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+var flickerAPI = "//api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 /**
 *       author
 *       date_taken
