@@ -2,7 +2,7 @@
 
 Flickr data looks like this:
 
-![alt text(flickr-json-data.png)
+![alt text](flickr-json-data.png)
 
 jQuery Ajax to retrieve data from Flickr
 
