@@ -13,7 +13,7 @@ Teaching kids JavaScript and HTML5
 
 1. go to [c9.io](http://c9.io)
 2. use your github account to sign up for a free Cloud9 account
-3. create new github repo for your project
+3. create new github repo for your project or fork this one
 4. Cloud9 editor can clone a github repo, and you can push your updates
 
 ###Why Cloud9?
