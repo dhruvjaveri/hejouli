@@ -13,6 +13,8 @@
 
 ###Practice
 
+![alt text](newsweek-js-practice.png)
+
 [index.html](jquery/index.html) is already a basic html page with jQuery and lodash Javascript libs referenced. In Cloud9, run it and open the link in a new browser Window or tab.
 
 Take a look at [app.js](jquery/app.js), it already has the Ajax loading part coded.
@@ -25,7 +27,7 @@ in app.js, a global variable called "newsweekData" is declared, later when the b
 
 ```javascript
 newsweekData
-
+//
 var njData = new Array();
 newsweekData.results.forEach(function(item, i){
     if (item.state == 'NJ') njData.push(item);
@@ -53,7 +55,6 @@ var template = _.template(
         '</table>'
     ].join(' ')
 );
-
 var html = template({items: njData});
 ```
 
@@ -67,7 +68,6 @@ var html = template({items: njData});
            tabular data goes here     
      </div>
 */
-
 $('#page-content').html(html);
 ```
 
