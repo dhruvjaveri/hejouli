@@ -21,7 +21,7 @@ Take a look at [app.js](jquery/app.js), it already has the Ajax loading part cod
 
 Open the browser's development console in the browser window/tab. You can now run javascript code and jQuery and lodash libs are available.
 
-1. examine the data
+1  examine the data
 
 in app.js, a global variable called "newsweekData" is declared, later when the browser loads the page, it call jquery Ajax.
 
@@ -34,7 +34,7 @@ newsweekData.results.forEach(function(item, i){
 });
 ```
 
-2. play with templates
+2  play with templates
 
  ```javascript
 // we want to create an html table
@@ -59,7 +59,7 @@ var html = template({items: njData});
 ```
 
 
-3. manipulate page content with jQuery
+3  manipulate page content with jQuery
 
 ```javascript
 // select the tag where we want to insert the html string
@@ -71,5 +71,5 @@ var html = template({items: njData});
 $('#page-content').html(html);
 ```
 
-4. work on the challenge
+4  work on the challenge
  
