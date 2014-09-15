@@ -37,8 +37,8 @@ newsweekData.results.forEach(function(item, i){
  ```javascript
 // we want to create an html table
 // template is made of text with embedded javascript
-// one way to concatenate strings is to them in an array, then join the array
-// you can + operator to do the same thing. But an array makes more readable.
+// one way to concatenate strings is to put them in an array, then join the array
+// you can use + operator to do the same thing. But an array makes more readable.
 var template = _.template(
     [
         '<table>',
@@ -55,7 +55,6 @@ var template = _.template(
 );
 
 var html = template({items: njData});
-
 ```
 
 
@@ -70,7 +69,7 @@ var html = template({items: njData});
 */
 
 $('#page-content').html(html);
-
 ```
 
 4. work on the challenge
+ 
